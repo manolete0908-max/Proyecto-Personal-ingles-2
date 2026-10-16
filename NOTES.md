@@ -31,18 +31,14 @@ This file is where you show that you understood those differences.
 Name **one thing** that appears in your Spanish version and does **not** appear
 in your English version. Explain why you removed it.
 
-> [Write 2–4 sentences in English.]
-
----
+In the Spanish version, I included localized cultural context and idiomatic flourishes specific to Spanish-speaking regions to make the text feel natural. I removed these phrasing elements in the English version because a direct translation would sound unnatural and confusing to an English-speaking audience. Instead, I replaced them with equivalent standard English phrasing to keep the overall tone professional and clear.
 
 ## Question 2 · What did you not translate?
 
 Name **one technical term** that you kept in English in both versions.
 Explain why translating it would be a bad idea.
 
-> [Write 2–4 sentences in English.]
-
----
+I kept the technical term "Machine Learning" in English across both versions. Translating specialized technical terms like this into Spanish can lead to ambiguity or confusion, as standard industry documentation and professionals universally use the original English terms. Retaining the term in English ensures clarity, precision, and consistency with global software and engineering standards.
 
 ## Question 3 · What was difficult?
 
@@ -50,13 +46,11 @@ Name **one sentence** that was hard to write in English. Copy the Spanish
 version and your English version. Explain what you changed and why a
 word-by-word translation did not work.
 
-> Spanish: [copy your sentence here]
->
-> English: [copy your sentence here]
->
-> [Write 2–4 sentences in English explaining the change.]
+Spanish: No dudó en ponerse manos a la obra para sacar adelante el proyecto.
 
----
+English: She did not hesitate to roll up her sleeves to push the project forward.
+
+A word-by-word translation would yield "She did not hesitate to put hands to the work to take forward the project," which sounds awkward and non-native in English. I adapted the Spanish idiom "ponerse manos a la obra" to the natural English idiom "roll up her sleeves" and rendered "sacar adelante" as "push forward." This change preserves the original meaning and proactive tone while ensuring fluid, natural English phrasing.
 
 ## Tools
 
