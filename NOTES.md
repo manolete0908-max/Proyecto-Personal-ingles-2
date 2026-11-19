@@ -1,8 +1,8 @@
 # Translation Notes
 
-**Student:** [Your name]
-**Course:** [Inglés I / Inglés II]
-**Date:** [dd/mm/yyyy]
+**Student:** Manuel Julian caceres Soto
+**Course:** Ingles IV-C
+**Date:** 12/sep/2008
 
 ---
 
