@@ -260,3 +260,62 @@ document.addEventListener("DOMContentLoaded", () => {
   aplicarIdioma("es");
   animarHabilidades();
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.getElementById("bot-toggle");
+  const close = document.getElementById("bot-close");
+  const panel = document.getElementById("bot-panel");
+  const form = document.getElementById("bot-form");
+  const input = document.getElementById("bot-input");
+  const messages = document.getElementById("bot-messages");
+
+  if (!toggle || !close || !panel || !form) return;
+
+  function mostrarPanel(mostrar) {
+    panel.hidden = !mostrar;
+    toggle.setAttribute("aria-expanded", String(mostrar));
+
+    if (mostrar) input.focus();
+  }
+
+  function agregarMensaje(texto, clase) {
+    const mensaje = document.createElement("p");
+    mensaje.className = `bot-message ${clase}`;
+    mensaje.textContent = texto;
+    messages.appendChild(mensaje);
+    messages.scrollTop = messages.scrollHeight;
+  }
+
+  function responder(pregunta) {
+    const texto = pregunta.toLowerCase();
+
+    if (texto.includes("habilidad") || texto.includes("html") || texto.includes("java")) {
+      return "Manuel está aprendiendo HTML, CSS, Java y bases de datos. También destaca en trabajo en equipo y aprendizaje continuo.";
+    }
+
+    if (texto.includes("proyecto")) {
+      return "Puedes ver sus proyectos en la sección “Proyectos” de esta página.";
+    }
+
+    if (texto.includes("contacto") || texto.includes("correo")) {
+      return "Puedes escribirle a mcaceres69@itfip.edu.co desde la sección de contacto.";
+    }
+
+    return "Puedo contarte sobre sus habilidades, proyectos o cómo contactarlo.";
+  }
+
+  toggle.addEventListener("click", () => mostrarPanel(panel.hidden));
+  close.addEventListener("click", () => mostrarPanel(false));
+
+  form.addEventListener("submit", event => {
+    event.preventDefault();
+
+    const pregunta = input.value.trim();
+    if (!pregunta) return;
+
+    agregarMensaje(pregunta, "user");
+    agregarMensaje(responder(pregunta), "");
+    input.value = "";
+    input.focus();
+  });
+});
