@@ -195,6 +195,30 @@
       menu.classList.remove("responsive");
       document.querySelector(".menu-toggle").setAttribute("aria-expanded", "false");
     }
+    <button class="bot-button" id="bot-toggle" type="button" aria-label="Abrir asistente" aria-expanded="false">
+  <i class="fa-solid fa-robot" aria-hidden="true"></i>
+</button>
+
+<section class="bot-panel" id="bot-panel" aria-label="Asistente virtual" hidden>
+  <header class="bot-header">
+    <div>
+      <strong>Asistente de Manuel</strong>
+      <span>En línea</span>
+    </div>
+    <button id="bot-close" type="button" aria-label="Cerrar asistente">×</button>
+  </header>
+
+  <div class="bot-messages" id="bot-messages" aria-live="polite">
+    <p class="bot-message">¡Hola! Pregúntame sobre las habilidades, los proyectos o el contacto de Manuel.</p>
+  </div>
+
+  <form class="bot-form" id="bot-form">
+    <input id="bot-input" type="text" placeholder="Escribe tu pregunta..." autocomplete="off" required>
+    <button type="submit" aria-label="Enviar mensaje">
+      <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+    </button>
+  </form>
+</section>
   </script>
 </body>
 </html>
